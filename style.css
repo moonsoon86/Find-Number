@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    background-image: url(./images/F2qRmLhRnmebc8jJAUjr_GuessTheNumber@3x.png);
+    background-size: cover;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#main h1{
+    text-align: center;
+    padding-top:50px;
+}
+
+#kutu{
+    text-align: center;
+    padding-top: 50px;
+    
+}
+#kutu button{
+    margin-top:50px;
+    background-color:#c54646;
+    color: white;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;  
+}
+#kutu input{
+    padding:1%;
+    height:30px;
+    border-radius: 10px;
+    border: 1px solid #828282;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+
+
+#test{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #5a1056;
+}
+
+#denemesayisi{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#text{
+    position:relative;
+}
+#text p{
+    
+    color:#685a35;
+    font-size:1rem;
+    user-select:none;
+    position: absolute;
+    top:40%;
+    margin-left:41rem;
+    transition:top 0.7s, font-size 0.2s, color 0.2s;
+}
+
+
+#text input:focus +p,
+#text input:not(:placeholder-shown) +p{
+    top:-2px;
+    transform: translateY(-50%);
+    font-size:0.9rem;
+    background-color: rgba(233, 181, 104, 0.918);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    #text p{
+        margin-left:6rem;   
+    }  
+}
